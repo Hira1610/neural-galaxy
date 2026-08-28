@@ -1,0 +1,50 @@
+:root {
+  --void: #05060a;
+  --void-2: #0a0d16;
+  --panel: rgba(14, 17, 26, 0.6);
+  --panel-border: rgba(139, 127, 255, 0.18);
+  --ink: #e9ecf5;
+  --ink-dim: #8991ab;
+  --cyan: #5eead4;
+  --violet: #8b7fff;
+  --gold: #ffd37a;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--void);
+  color: var(--ink);
+  font-family: var(--font-body);
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgba(139, 127, 255, 0.35);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
